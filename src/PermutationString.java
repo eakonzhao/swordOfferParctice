@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Collections;
 
 /**
  * Created by Eakon on 2017/6/3.
@@ -12,6 +13,7 @@ public class PermutationString {
         ArrayList<String> result = new ArrayList<>();
         if(str!=null && str.length()>0){
             Permutation(str.toCharArray(),0,result);
+            Collections.sort(result);
         }
         return result;
     }
