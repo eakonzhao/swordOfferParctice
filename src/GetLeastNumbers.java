@@ -110,5 +110,4 @@ public class GetLeastNumbers {
         input[low] = input[high];
         input[high] = temp;
     }
-
 }

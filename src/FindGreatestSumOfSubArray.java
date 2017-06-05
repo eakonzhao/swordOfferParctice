@@ -9,4 +9,15 @@
  * 你会不会被他忽悠住？(子向量的长度至少是1)
  */
 public class FindGreatestSumOfSubArray {
+
+    public int FindGreatestSumOfSubArray2(int[] array) {
+        if(array==null || array.length==0) return 0;
+        int curSum = array[0];
+        int result = array[0];
+        for(int i=1; i<array.length; i++){
+            curSum = (curSum<=0)?array[i]:curSum+array[i];
+            result = (curSum>result)?curSum:result;
+        }
+        return result;
+    }
 }
