@@ -13,6 +13,9 @@
 import java.util.ArrayList;
 import java.util.LinkedList;
 
+/**
+ * 逆序数粗单链表
+ */
 public class PrintListFromTailToHead {
 
     public ArrayList<Integer> printListFromTailToHead(ListNode listNode){

@@ -3,9 +3,8 @@
  */
 public class Test {
     public static void main(String[] args) {
-        StringBuffer stringBuffer = new StringBuffer("eakon");
-        int length = stringBuffer.length();
-        System.out.println(length);
-        System.out.println(stringBuffer.charAt(length-1));
+        System.out.println(Integer.MAX_VALUE);
+        System.out.println(Integer.MIN_VALUE);
+        System.out.println(1000000009%1000000007);
     }
 }
