@@ -7,7 +7,7 @@
  * 从这个圆圈里删除第m个数字。求出这个圆圈里剩下的最后一个数字。
  */
 public class LastRemaining {
-    public int LastRemaining_Solution(int n, int m){
-         
-    }
+    /*public int LastRemaining_Solution(int n, int m){
+
+    }*/
 }
