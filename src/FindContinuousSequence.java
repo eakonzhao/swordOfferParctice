@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 /**
  * Created by Eakon on 2017/6/8.
  *
@@ -17,8 +19,28 @@
  序列间按照开始数字从小到大的顺序
  */
 public class FindContinuousSequence {
-  /*  public ArrayList<ArrayList<Integer>> FindContinuousSequence(int sum) {
-         ArrayList<ArrayList<Integer>> listAll = new ArrayList<>();
-
-    }*/
+    public ArrayList<ArrayList<Integer>> FindContinuousSequence(int sum) {
+        ArrayList<ArrayList<Integer>> listAll = new ArrayList<>();
+        if(sum>=3){
+            int low=1;
+            int high=2;
+            int mid=(1+sum)/2;
+            while(low<mid){
+                int tempSum = (low+high)*(high-low+1)/2;
+                if(tempSum==sum){
+                    ArrayList<Integer>  list = new ArrayList<>();
+                    for(int i=low; i<=high; i++){
+                        list.add(i);
+                    }
+                    listAll.add(new ArrayList(list));
+                    high++;
+                }else if(tempSum<sum){
+                    high++;
+                }else if(tempSum>sum){
+                    low++;
+                }
+            }
+         }
+         return listAll;
+    }
 }
