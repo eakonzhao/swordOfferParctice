@@ -11,7 +11,7 @@ public class SerializableBinaryTree {
         StringBuilder sb = new StringBuilder("");
         if(root!=null){
             sb.append(root.val+",");
-            
+
         }
         sb.append("$,");
         return sb.toString();
